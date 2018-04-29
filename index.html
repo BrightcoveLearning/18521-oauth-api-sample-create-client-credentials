@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>OAuth API Sample: Create Client Credentials</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/source-code-pro" type="text/css"/>
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <section class="bcls-section">
+  <h2 id="app">The app</h2>
+
+  <fieldset>
+    <legend>Inputs</legend>
+
+    <p>Name for the credentials (no special characters): <input id="credentialsName" type="text" size="50" /></p>
+
+    <p>BC_TOKEN: <input id="bcToken" type="text" size="50" /></p>
+
+    <p>Account(s) to create credentials for (comma-delimited list): <input id="accountIds" type="text" size="50" placeholder="57838016001,1752604059001,921483702001" /></p>
+
+    <p>Account(s) type: <select name="accountTypeSelector" id="accountTypeSelector"><option value="video-cloud-account">Video Cloud</option><option value="video-cloud-account">Brightcove Player</option> </select></p>
+
+    <p>API operations to enable (see <a href="/node/17922">API Operations for Client Credentials</a> for more information):</p>
+
+    <div id="operationsList">&nbsp;</div>
+
+    <p><button id="submitButton" class="bcls-button">Get Client Credentials</button></p>
+
+    <p>Full API request body:</p>
+    <textarea name="apiRequest" id="apiRequest" class="bcls-code"></textarea></fieldset>
+
+  <fieldset>
+    <legend>Output</legend>
+
+    <h3>Client ID</h3>
+    <textarea name="clientId" id="clientId" class="bcls-code">CLient ID will appear here...</textarea>
+
+    <h3>Client Secret</h3>
+    <textarea name="clientSecret" id="clientSecret" class="bcls-code">CLient Secret will appear here...</textarea>
+
+    <h3>Full response</h3>
+
+    <pre class="line-numbers">
+<code id="apiResponse" class="language-json">Full API response will appear here...</code></pre>
+  </fieldset>
+</section>
+  
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
