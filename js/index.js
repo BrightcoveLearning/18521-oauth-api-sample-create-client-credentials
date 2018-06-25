@@ -17,6 +17,8 @@ var BCLS = (function(window, document) {
       "video-cloud/analytics/read",
       "video-cloud/audience/read",
       "video-cloud/audience/write",
+      "video-cloud/experiences/read",
+      "video-cloud/experiences/all",
       "video-cloud/player/read",
       "video-cloud/player/all",
       "video-cloud/ingest-profiles/profile/read",
